@@ -1,11 +1,15 @@
 '''
 Input: a List of integers where every int except one shows up twice
 Returns: an integer
-'''
+''' 
 def single_number(arr):
-    # Your code here
+    num = 0
+    for i in arr:
+        num ^= i
+    return num    
+  
 
-    pass
+    # pass
 
 
 if __name__ == '__main__':
